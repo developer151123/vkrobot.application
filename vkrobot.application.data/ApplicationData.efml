@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore context-namespace="vkrobot.application.data" namespace="vkrobot.application.data" p1:name="ApplicationData" p1:Guid="c9fd803e-3fed-426e-9e70-fb5bcacd6462" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="Group" entity-set="Groups" p1:Guid="d1e65f06-3a60-40ac-9268-006d7e7d5064">
+    <id name="Id" type="Guid" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="6de4923d-c805-4613-936c-2987620852f5">
+      <column name="" />
+    </id>
+    <property name="GroupId" type="String" p1:ValidateRequired="true" p1:Guid="715f1842-3da8-45da-b5dc-f3c830788a1c">
+      <column name="" />
+    </property>
+    <property name="User" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="552328e5-4332-43b8-8c4a-60b9ec8774f7">
+      <column name="" />
+    </property>
+    <property name="Password" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="9da9073c-a6ea-4c0f-bc63-353610c0a1ad">
+      <column name="" />
+    </property>
+    <property name="LastScan" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="2872c3f6-1362-457a-85b0-a97bb245f2fe">
+      <column name="" />
+    </property>
+    <property name="ErrorText" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="9f11b7bf-66cb-4903-9c5a-e477e3388707">
+      <column name="" />
+    </property>
+    <property name="GroupName" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="dd7c5e1d-f0ee-426b-9c69-8c6b3ffed155">
+      <column name="" />
+    </property>
+    <property name="Private" type="Boolean" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="ac8ce36a-0ab5-4637-b4f8-188dc2c4fb7c">
+      <column name="" />
+    </property>
+  </class>
+  <class name="Message" entity-set="Messages" p1:Guid="467b6c42-644a-403e-90e8-1bf54ccc6596">
+    <id name="Id" type="Guid" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="104de119-b873-4b29-b19b-072bfb0f64f4">
+      <column name="" />
+    </id>
+    <property name="UserId" type="String" p1:ValidateRequired="true" p1:Guid="7cbad6ee-25be-4aa9-a83a-ea18249e5536">
+      <column name="" />
+    </property>
+    <property name="GroupId" type="String" p1:ValidateRequired="true" p1:Guid="23f9ab10-5742-49f6-abfa-6ccfb9557e5f">
+      <column name="" />
+    </property>
+    <property name="MessageText" type="String" p1:ValidateRequired="true" p1:Guid="d3f8dfe6-c842-4cc3-acdf-40e3b3eb6710">
+      <column name="" />
+    </property>
+    <property name="MessageDate" type="DateTime" p1:ValidateRequired="true" p1:Guid="b39af9b0-3498-4531-bee5-1592169a7c89">
+      <column name="" />
+    </property>
+  </class>
+</efcore>
